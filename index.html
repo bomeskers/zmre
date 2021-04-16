@@ -1,0 +1,94 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>ZMRE Rekentool</h1>
+
+    <form>
+        <fieldset>
+            <legend>Eenmalige kosten</legend>
+            <div class="field-group">
+                <label for="1">Aankoopbedrag</label>
+                <input id="1" name="purchase-price" type="number">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Inkomsten</legend>
+
+            <div class="field-group">
+                <label for="2">Huurinkomsten</label>
+
+                <div class="field-group-row">
+                    <input id="2" name="rental-income" type="number">
+                    <select name="rental-income-frequency">
+                        <option value="month">per maand</option>
+                        <option value="year">per jaar</option>
+                    </select>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Uitgaven</legend>
+
+            <div class="field-row">
+                <div class="field-group">
+                    <label for="3">Zakelijke hypotheek</label>
+                    <input id="3" name="mortgage" type="number">
+                </div>
+                <div class="field-group">
+                    <label for="4">Rente</label>
+                    <input id="4" name="interest-mortgage" type="number" min="0" max="20">
+                </div>
+            </div>
+
+            <div class="field-options">
+                <div class="field-group">
+                    <select name="loan-type" class="js-loan-type">
+                        <option value="loan">Particuliere lening</option>
+                        <option value="private-equity">Eigen vermogen</option>
+                    </select>
+                </div>
+
+                <div class="field-group js-interest-loan">
+                    <label for="5">Rente particuliere lening</label>
+                    <input id="5" name="interest-loan" type="number" min="0" max="20">
+                </div>
+
+                <div class="field-group hidden js-private-equity">
+                    <label for="6">Rendement eigen vermogen</label>
+                    <input id="6" name="efficiency-private-equity" type="number" min="0" max="20">
+                </div>
+            </div>
+
+            <div class="field-group">
+                <label for="7">Aflossing</label>
+                <input id="7" name="precentage-redemption" type="number" min="0" max="100">
+            </div>
+
+            <div class="field-group">
+                <label for="8">VVE</label>
+                <input id="8" name="home-owners-association" type="number">
+                <select name="home-owners-association-frequency">
+                    <option value="month">per maand</option>
+                    <option value="year">per jaar</option>
+                </select>
+            </div>
+        </fieldset>
+        <div>
+            <button type="submit">Verzenden</button>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

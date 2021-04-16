@@ -1,0 +1,30 @@
+fieldset {
+margin: 20px 0px;
+}
+
+.field-row {
+    display:flex;
+    flex-direction: row;
+    gap:10px;
+}
+
+.field-group {
+    display:flex;
+    flex-direction:column;
+}
+
+.field-group label {
+    margin:10px 0px 10px;
+}
+
+.field-group select {
+    margin:10px 0px 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    margin: 10px 0px;
+}
