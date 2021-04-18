@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ZMRE Rekentool</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bentham&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <h1>ZMRE Rekentool</h1>
 
-    <form>
-        <fieldset>
+    <form class="calculator">
+        <fieldset class="calculator__fieldset">
             <legend>Eenmalige kosten</legend>
             <div class="field-group">
                 <label for="1">Aankoopbedrag</label>
@@ -20,7 +22,7 @@
             </div>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="calculator__fieldset">
             <legend>Inkomsten</legend>
 
             <div class="field-group">
@@ -36,7 +38,7 @@
             </div>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="calculator__fieldset">
             <legend>Uitgaven</legend>
 
             <div class="field-row">
@@ -83,12 +85,13 @@
                 </select>
             </div>
         </fieldset>
+
         <div>
             <button type="submit">Verzenden</button>
         </div>
     </form>
 
-    <script src="script.js"></script>
+    <script src="./dist/main.bundle.js"></script>
 </body>
 
 </html>

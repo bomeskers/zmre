@@ -1,0 +1,21 @@
+{
+  "name": "zmre",
+  "version": "1.0.0",
+  "description": "Zuurbier & Meskers Real Estate Rekentool",
+  "repository": "https://github.com/bomeskers/zmre.git",
+  "author": "bomeskers <82666826+bomeskers@users.noreply.github.com>",
+  "license": "Apache-2.0",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open",
+    "watch": "webpack --watch",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^5.3.1",
+    "webpack": "^5.33.2",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

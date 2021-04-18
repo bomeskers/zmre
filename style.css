@@ -1,5 +1,18 @@
+h1 {
+font-family: 'Bentham', serif;
+font-weight: 400;
+font-size: 42px;
+text-transform: uppercase;
+}
+
 fieldset {
 margin: 20px 0px;
+}
+
+legend {
+font-family: 'Bentham', serif;
+font-weight:600;
+font-size:24px;
 }
 
 .field-row {
