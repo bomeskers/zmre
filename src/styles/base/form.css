@@ -1,0 +1,15 @@
+.field-row {
+    @apply flex flex-row gap-3;
+}
+
+.field-group {
+    @apply flex flex-col;
+}
+
+.field-group label {
+    @apply my-3;
+}
+
+.field-group select {
+    @apply my-3;
+}

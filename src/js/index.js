@@ -1,2 +1,0 @@
-import './loanType';
-import './calculation';

@@ -1,0 +1,7 @@
+.calculator {
+    @apply border rounded p-6 shadow;
+}
+
+.calculator__fieldset {
+    @apply my-5 border rounded p-3;
+}

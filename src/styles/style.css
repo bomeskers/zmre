@@ -1,0 +1,64 @@
+@import './fonts/bentham';
+
+@import './base/global';
+@import './base/text';
+@import './base/form';
+
+@import './components/banner';
+@import './components/calculator';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-size: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+}
+
+fieldset {
+    margin: 20px 0px;
+}
+
+legend {
+    font-family: 'Bentham', serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.field-row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.field-group label {
+    margin: 10px 0px 10px;
+}
+
+.field-group select {
+    margin: 10px 0px 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    margin: 10px 0px;
+}

@@ -2,3 +2,5 @@
 # These files can either contain sensitive information that should not be made public
 # or files that are part of a package manager, like node_modules.
 node_modules
+
+./dist/**

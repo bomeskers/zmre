@@ -1,0 +1,8 @@
+.banner {
+    @apply font-serif;
+    @apply px-4 py-2;
+}
+
+.banner__container {
+    @apply px-4 py-2 bg-burgundy text-cream rounded;
+}
