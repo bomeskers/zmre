@@ -16,63 +16,38 @@
                             <div class="banner__title">
                                 <h1 class="title">
                                     <span>ZMRE</span>
-                                    <small class="title--small"
-                                        >Rekentool</small
-                                    >
+                                    <small class="title--small">Rekentool</small>
                                 </h1>
-                                <p class="text-merino">
-                                    Met deze kunnen we snel een
-                                    rendementsberekening maken.
-                                </p>
+                                <p class="text-merino">Met deze kunnen we snel een rendementsberekening maken.</p>
                             </div>
                         </div>
                     </header>
                 </div>
 
                 <div class="grid-layout__calculator">
-                    <form class="calculator">
+                    <form class="calculator js-calculator-form">
                         <fieldset class="calculator__fieldset">
-                            <legend class="calculator__legend">
-                                Eenmalige kosten
-                            </legend>
+                            <legend class="calculator__legend">Eenmalige kosten</legend>
                             <div class="field-group">
-                                <label class="field-label" for="purchase-price"
-                                    >Aankoopbedrag</label
-                                >
+                                <label class="field-label" for="purchase-price">Aankoopbedrag</label>
                                 <div class="field-input field-input--price">
-                                    <input
-                                        id="purchase-price"
-                                        name="purchase-price"
-                                        type="number"
-                                    />
+                                    <input id="purchase-price" name="purchase-price" type="number" />
                                 </div>
                             </div>
                         </fieldset>
 
                         <fieldset class="calculator__fieldset">
-                            <legend class="calculator__legend">
-                                Inkomsten
-                            </legend>
+                            <legend class="calculator__legend">Inkomsten</legend>
 
                             <div class="field-group">
-                                <label class="field-label" for="2"
-                                    >Huurinkomsten</label
-                                >
+                                <label class="field-label" for="2">Huurinkomsten</label>
 
                                 <div class="field-group-row">
                                     <div class="field-input">
-                                        <input
-                                            id="2"
-                                            name="rental-income"
-                                            type="number"
-                                        />
+                                        <input id="2" name="rental-income" type="number" />
                                         <select name="rental-income-frequency">
-                                            <option value="month">
-                                                per maand
-                                            </option>
-                                            <option value="year">
-                                                per jaar
-                                            </option>
+                                            <option value="month">per maand</option>
+                                            <option value="year">per jaar</option>
                                         </select>
                                     </div>
                                 </div>
@@ -84,119 +59,57 @@
 
                             <div class="field-row">
                                 <div class="field-group">
-                                    <label class="field-label" for="3"
-                                        >Zakelijke hypotheek</label
-                                    >
+                                    <label class="field-label" for="3">Zakelijke hypotheek</label>
                                     <div class="field-input field-input--price">
-                                        <input
-                                            id="3"
-                                            name="mortgage"
-                                            type="number"
-                                        />
+                                        <input id="3" name="mortgage" type="number" />
                                     </div>
                                 </div>
                                 <div class="field-group">
-                                    <label class="field-label" for="4"
-                                        >Rente</label
-                                    >
-                                    <div
-                                        class="field-input field-input--percent"
-                                    >
-                                        <input
-                                            id="4"
-                                            name="interest-mortgage"
-                                            type="number"
-                                            min="0"
-                                            max="20"
-                                        />
+                                    <label class="field-label" for="4">Rente</label>
+                                    <div class="field-input field-input--percent">
+                                        <input id="4" name="interest-mortgage" type="number" min="0" max="20" />
                                     </div>
                                 </div>
                             </div>
 
                             <div class="field-options">
                                 <div class="field-group">
-                                    <label class="field-label" for="loan-type"
-                                        >Type inleg</label
-                                    >
+                                    <label class="field-label" for="loan-type">Type inleg</label>
                                     <div class="field-input">
-                                        <select
-                                            id="loan-type"
-                                            name="loan-type"
-                                            class="w-full js-loan-type"
-                                        >
-                                            <option value="loan">
-                                                Particuliere lening
-                                            </option>
-                                            <option value="private-equity">
-                                                Eigen vermogen
-                                            </option>
+                                        <select id="loan-type" name="loan-type" class="w-full js-loan-type">
+                                            <option value="loan">Particuliere lening</option>
+                                            <option value="private-equity">Eigen vermogen</option>
                                         </select>
                                     </div>
                                 </div>
 
                                 <div class="field-group js-interest-loan">
-                                    <label class="field-label" for="5"
-                                        >Rente particuliere lening</label
-                                    >
-                                    <div
-                                        class="field-input field-input--percent"
-                                    >
-                                        <input
-                                            id="5"
-                                            name="interest-loan"
-                                            type="number"
-                                            min="0"
-                                            max="20"
-                                        />
+                                    <label class="field-label" for="5">Rente particuliere lening</label>
+                                    <div class="field-input field-input--percent">
+                                        <input id="5" name="interest-loan" type="number" min="0" max="20" />
                                     </div>
                                 </div>
 
-                                <div
-                                    class="field-group hidden js-private-equity"
-                                >
-                                    <label class="field-label" for="6"
-                                        >Rendement eigen vermogen</label
-                                    >
-                                    <div
-                                        class="field-input field-input--percent"
-                                    >
-                                        <input
-                                            id="6"
-                                            name="efficiency-private-equity"
-                                            type="number"
-                                            min="0"
-                                            max="20"
-                                        />
+                                <div class="field-group hidden js-private-equity">
+                                    <label class="field-label" for="6">Rendement eigen vermogen</label>
+                                    <div class="field-input field-input--percent">
+                                        <input id="6" name="efficiency-private-equity" type="number" min="0" max="20" />
                                     </div>
                                 </div>
                             </div>
 
                             <div class="field-group">
-                                <label class="field-label" for="7"
-                                    >Aflossing</label
-                                >
+                                <label class="field-label" for="7">Aflossing</label>
                                 <div class="field-input field-input--price">
-                                    <input
-                                        id="7"
-                                        name="precentage-redemption"
-                                        type="number"
-                                        min="0"
-                                        max="100"
-                                    />
+                                    <input id="7" name="precentage-redemption" type="number" min="0" max="100" />
                                 </div>
                             </div>
 
                             <div class="field-group">
                                 <label class="field-label" for="8">VVE</label>
                                 <div class="field-input">
-                                    <input
-                                        id="8"
-                                        name="home-owners-association"
-                                        type="number"
-                                    />
-                                    <select
-                                        name="home-owners-association-frequency"
-                                    >
+                                    <input id="8" name="home-owners-association" type="number" />
+                                    <select name="home-owners-association-frequency">
                                         <option value="month">per maand</option>
                                         <option value="year">per jaar</option>
                                     </select>
@@ -204,10 +117,8 @@
                             </div>
                         </fieldset>
 
-                        <div>
-                            <button class="button" type="submit">
-                                Verzenden
-                            </button>
+                        <div class="calculator__footer">
+                            <button class="button" type="submit">Verzenden</button>
                         </div>
                     </form>
                 </div>
