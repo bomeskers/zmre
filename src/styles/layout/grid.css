@@ -1,0 +1,12 @@
+.grid-layout {
+    grid-template-columns: 1fr 3rem 32rem;
+    grid-template-rows: 3rem 1fr 3rem;
+}
+
+.grid-layout__header {
+    grid-area: 1 / 1 / 4 / 3;
+}
+
+.grid-layout__calculator {
+    grid-area: 2 / 2 / 3 / 4;
+}
