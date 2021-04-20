@@ -3,9 +3,13 @@
 }
 
 .calculator__fieldset {
-    @apply border rounded p-3 bg-white shadow-md;
+    @apply border rounded p-3 bg-gray-100 shadow-md;
 }
 
 .calculator__legend {
     @apply py-1 px-2 text-merino bg-terracotta rounded font-serif text-xl;
+}
+
+.calculator__footer {
+    @apply flex justify-end;
 }
