@@ -1,0 +1,7 @@
+.debug {
+    @apply p-5 pr-12 text-xs bg-gunPowder text-manhattan border border-manhattan fixed bottom-4 left-4 rounded;
+}
+
+.debug__close {
+    @apply absolute top-2 right-2 m-0 py-2 px-3 bg-manhattan text-gunPowder rounded;
+}

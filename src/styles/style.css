@@ -9,6 +9,7 @@
 @import './components/button';
 @import './components/banner';
 @import './components/calculator';
+@import './components/debug';
 
 @tailwind base;
 @tailwind components;
