@@ -12,4 +12,4 @@ import './scripts';
 /**
  * Styles entrypoint.
  */
- import './styles';
+import './styles';

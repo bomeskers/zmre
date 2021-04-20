@@ -1,26 +1,30 @@
 {
-  "name": "zmre",
-  "version": "1.0.0",
-  "description": "Zuurbier & Meskers Real Estate Rekentool",
-  "repository": "https://github.com/bomeskers/zmre.git",
-  "author": "bomeskers <82666826+bomeskers@users.noreply.github.com>",
-  "license": "Apache-2.0",
-  "private": true,
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --watch",
-    "build": "webpack"
-  },
-  "dependencies": {
-    "autoprefixer": "^10.2.5",
-    "css-loader": "^5.2.2",
-    "html-webpack-plugin": "^5.3.1",
-    "postcss": "^8.2.10",
-    "postcss-import": "^14.0.1",
-    "postcss-loader": "^5.2.0",
-    "style-loader": "^2.0.0",
-    "tailwindcss": "^2.1.1",
-    "webpack": "^5.33.2",
-    "webpack-cli": "^4.6.0"
-  }
+    "name": "zmre",
+    "version": "1.0.0",
+    "description": "Zuurbier & Meskers Real Estate Rekentool",
+    "repository": "https://github.com/bomeskers/zmre.git",
+    "author": "bomeskers <82666826+bomeskers@users.noreply.github.com>",
+    "license": "Apache-2.0",
+    "private": true,
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "webpack --watch",
+        "serve": "webpack serve",
+        "build": "webpack"
+    },
+    "dependencies": {
+        "autoprefixer": "^10.2.5",
+        "css-loader": "^5.2.2",
+        "html-webpack-plugin": "^5.3.1",
+        "postcss": "^8.2.10",
+        "postcss-import": "^14.0.1",
+        "postcss-loader": "^5.2.0",
+        "style-loader": "^2.0.0",
+        "tailwindcss": "^2.1.1",
+        "webpack": "^5.33.2",
+        "webpack-cli": "^4.6.0"
+    },
+    "devDependencies": {
+        "webpack-dev-server": "^3.11.2"
+    }
 }
