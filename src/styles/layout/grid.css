@@ -3,6 +3,12 @@
     grid-template-rows: 3rem 1fr 3rem;
 }
 
+@screen md {
+    .grid-layout {
+        grid-template-columns: 1fr 5rem 32rem;
+    }
+}
+
 .grid-layout__header {
     grid-area: 1 / 1 / 4 / 3;
 }

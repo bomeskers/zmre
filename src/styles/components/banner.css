@@ -5,3 +5,10 @@
 .banner__container {
     @apply p-8 pr-20;
 }
+
+@screen md {
+    .banner__container {
+        @apply p-8;
+        padding-right: 7rem;
+    }
+}
