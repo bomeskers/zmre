@@ -1,7 +1,11 @@
 .calculator {
-    @apply border rounded p-6 shadow;
+    @apply border rounded p-6 m-0 shadow bg-white;
+}
+
+.calculator__legend {
+    @apply py-1 px-2 text-merino bg-terracotta rounded font-serif text-xl;
 }
 
 .calculator__fieldset {
-    @apply my-5 border rounded p-3;
+    @apply my-5 border rounded p-3 bg-white shadow-md;
 }

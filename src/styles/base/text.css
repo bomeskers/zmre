@@ -1,6 +1,7 @@
 .title {
-    @apply font-serif;
-    font-weight: 700;
-    font-size: 42px;
-    text-transform: uppercase;
+    @apply font-serif font-bold text-5xl mb-4;
+}
+
+.title--small {
+    @apply text-2xl block text-merino;
 }

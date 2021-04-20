@@ -1,0 +1,4 @@
+.button {
+    @apply p-3 bg-acapulco  rounded shadow-md transition-colors;
+    @apply font-serif font-bold text-merino hover:text-manhattan;
+}

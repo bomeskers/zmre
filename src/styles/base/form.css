@@ -1,15 +1,42 @@
-.field-row {
-    @apply flex flex-row gap-3;
+.field-row,
+.field-group-row {
+    @apply flex flex-row flex-wrap gap-3;
 }
 
 .field-group {
-    @apply flex flex-col;
+    @apply flex flex-col mb-3;
+    flex: 1 1 calc(50% - 0.75rem);
 }
 
-.field-group label {
-    @apply my-3;
+.field-label {
+    @apply mt-3 mb-2 font-serif text-xl;
 }
 
 .field-group select {
-    @apply my-3;
+}
+
+.field-input {
+    @apply flex bg-white rounded border w-full font-serif overflow-hidden;
+}
+
+.field-input :is(input, select) {
+    @apply p-3;
+    appearance: none;
+}
+
+.field-input input {
+    @apply flex-1;
+}
+
+.field-input select {
+    @apply pr-6 bg-gunPowder text-manhattan;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Y2lyY2xlIGN4PSI1IiBjeT0iNSIgcj0iNSIgZmlsbD0iI0YyQ0M4RiIvPgo8L3N2Zz4=');
+    background-repeat: no-repeat;
+    background-size: 6px;
+    background-position: right 0.75rem center;
+}
+
+.field-input--price::after {
+    @apply bg-gunPowder text-manhattan p-3;
+    content: '€';
 }

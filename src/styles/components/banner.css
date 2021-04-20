@@ -1,8 +1,7 @@
 .banner {
-    @apply font-serif;
-    @apply px-4 py-2;
+    @apply font-serif bg-acapulco text-manhattan rounded;
 }
 
 .banner__container {
-    @apply px-4 py-2 bg-burgundy text-cream rounded;
+    @apply p-8 pr-20;
 }
