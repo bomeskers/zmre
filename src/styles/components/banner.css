@@ -1,14 +1,7 @@
 .banner {
-    @apply font-serif bg-acapulco text-manhattan rounded;
+    @apply font-serif bg-acapulco text-manhattan rounded h-full;
 }
 
 .banner__container {
-    @apply p-8 pr-20;
-}
-
-@screen md {
-    .banner__container {
-        @apply p-8;
-        padding-right: 7rem;
-    }
+    @apply p-8 pb-14;
 }

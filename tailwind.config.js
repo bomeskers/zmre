@@ -3,13 +3,7 @@ module.exports = {
     purge: ['./index.html'],
     theme: {
         container: {
-            center: true,
-            maxWidth: {
-                sm: '32em',
-                md: '40em',
-                lg: '48em',
-                xl: '64em'
-            }
+            center: true
         },
         fontFamily: {
             serif: ['Bentham', 'serif']
