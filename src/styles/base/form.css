@@ -46,7 +46,14 @@
     background-position: right 0.75rem center;
 }
 
+:is(.field-input--price, .field-input--percent)::after {
+    @apply bg-gunPowder text-manhattan font-bold p-3;
+}
+
 .field-input--price::after {
-    @apply bg-gunPowder text-manhattan p-3;
     content: '€';
+}
+
+.field-input--percent::after {
+    content: '%';
 }
